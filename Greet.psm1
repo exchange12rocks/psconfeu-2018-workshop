@@ -15,7 +15,7 @@ function New-Greeting {
 function Get-Name {
     [CmdletBinding()]
     param (
-        
+        [switch]$DoNothing
     )
 
     process {
