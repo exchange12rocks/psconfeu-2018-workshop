@@ -1,12 +1,13 @@
-function New-Greeting() {
+function New-Greeting {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory=$true, 
             ValueFromPipeline=$true)]
-        [string]$Name
+        [string]$Name,
+        [string]$Greeting = 'Hello'
     )
 
     process {
-        "Hello " + $Name
+        '{0} {1}' -f $Greeting, $Name
     }
 }
