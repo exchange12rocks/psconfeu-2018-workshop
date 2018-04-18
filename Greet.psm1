@@ -11,3 +11,17 @@ function New-Greeting {
         '{0} {1}' -f $Greeting, $Name
     }
 }
+
+function Get-Name {
+    [CmdletBinding()]
+    param (
+        
+    )
+
+    process {
+        'Bob'
+        'Kirill'
+        'Janus'
+        'Alisa'
+    }
+}
